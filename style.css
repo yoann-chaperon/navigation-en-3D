@@ -1,0 +1,80 @@
+/*
+font-family: 'Anton', sans-serif;
+font-family: 'Permanent Marker', cursive;
+*/
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Anton', sans-serif;
+    background: url(./assets/bg.jpeg)no-repeat 0% 0%/ cover;
+    height: 100vh;
+}
+
+.content {
+    margin: 2rem 2rem 0 45rem;
+}
+
+h1 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 6rem;
+    margin: 3rem;
+    color: skyblue;
+    font-family: 'Lobster';
+    text-shadow: 4px 3px 0px #fff,
+        9px 8px 0px rgba(0, 0, 0, 0.15);
+}
+
+p {
+    padding: 2rem;
+    margin-bottom: 1rem;
+    background: rgba(150, 217, 243, 0.288);
+    color: #fff;
+    font-size: 2rem;
+    border-radius: 2px;
+}
+
+nav {
+    margin: 3rem 0 0 3rem;
+    position: fixed;
+}
+
+ul {
+    width:500px;
+    list-style: none;
+    perspective: 500px;
+}
+
+ul:hover li:not(:hover) {
+    opacity: 0.5;
+}
+
+li {
+    transform: rotateY(30deg);
+    transform-origin: left;
+    transition: .8s;
+}
+li:hover {
+transform: rotateY(3deg) scale(1.4);
+}
+
+li a {
+    font-size: 3rem;
+    text-decoration: none;
+    color: rgb(255, 9, 255);
+    opacity: 0.3;
+}
+
+li a.active,
+li a:hover {
+    opacity: 0.7;
+}
+
+#lien {
+    color:inherit;
+}
